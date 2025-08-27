@@ -1,0 +1,245 @@
+# Speech Translation System - .gitignore
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Models and Large Files
+models/
+*.model
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Audio Files (exclude sample files but include specific samples)
+data/samples/*.wav
+data/samples/*.mp3
+data/samples/*.m4a
+data/samples/*.flac
+data/samples/*.ogg
+!data/samples/README.md
+
+data/voice_samples/*.wav
+data/voice_samples/*.mp3
+data/voice_samples/*.m4a
+data/voice_samples/*.flac
+data/voice_samples/*.ogg
+!data/voice_samples/README.md
+
+# Generated Audio Outputs
+output/
+outputs/
+results/
+translated_*
+*_translated.*
+*_output.*
+
+# Logs
+logs/
+*.log
+speech_translation.log
+
+# Temporary files
+temp/
+tmp/
+.tmp/
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+cache/
+__pycache__/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Model cache (Hugging Face, Whisper, TTS)
+.transformers_cache/
+.whisper_cache/
+.tts_cache/
+~/.cache/whisper/
+~/.cache/huggingface/
+~/.cache/torch/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Configuration files with sensitive data
+config/local.json
+config/secrets.json
+config/api_keys.json
+.secrets
+secrets.yaml
+
+# Session and state files
+sessions/
+*.session
+*.state
+speaker_data/
+*.pkl
+*.pickle
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Performance profiling
+*.prof
+*.profile
+
+# GPU/CUDA cache
+.nv/
+
+# FastAPI/Uvicorn
+.uvicorn.pid
+
+# Gradio/Streamlit
+gradio_cached_examples/
+.streamlit/
+
+# Specific to our project
+configs/local_*.json
+batch_output/
+translated_batch/
+voice_clone_output/
+*_config_*.json
+
+# Large datasets
+datasets/
+data/large_files/
+data/downloads/
+
+# API keys and credentials
+.api_keys
+credentials.json
+google_credentials.json
+
+# Runtime files
+*.pid
+*.lock
+
+# Coverage reports
+.coverage*
+htmlcov/
+
+# Profiling
+.prof
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
